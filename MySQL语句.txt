@@ -1,0 +1,32 @@
+增删改查
+insert into 表名   值1  值2         值1   值2
+insert into study(name,age) values("王五",25)
+
+删除语句
+            表名        条件
+delete from study where Id=1
+delete from study where name="张三" and age=25
+delete from study where Id=2 or Id=3
+
+更新数据
+updata 表名  set  字段1   字段2     条件
+update study set name="李四" where name="张三"
+update study set name="张三",age=18 where Id=2
+
+查找数据
+
+select * from 表名  (查询所有内容)
+select * from 表名  where 条件
+select 字段1  from表名  where  条件
+select 字段1,字段2  from 表名 where 条件
+
+select * from study where Id=6
+select Id,name from study
+
+分页查询语句
+select * from 表名 limit 从索引值为0的开始截  截取2多少个
+select * from study limit 0,2   //第一页
+select * from study limit 2,2   //第二页
+select * from study limit 4,2   //第三页
+
+select * from study limit 1,2
