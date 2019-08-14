@@ -1,0 +1,21 @@
+css-loader压缩功能已经废除
+
+使用第三方插件压缩
+
+1. npm install optimize-css-assets-webpack-plugin  cssnano --save-dev
+
+2.webpack.config.js
+
+	var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+
+	plugins:[
+		new OptimizeCssAssetsPlugin({
+            			assetNameRegExp: /\.css$/g,
+           			 cssProcessorOptions: {
+              			           safe: true,
+                			           map: {
+                   			     inline: false
+               			           }
+                                                    }
+                                   })
+	]

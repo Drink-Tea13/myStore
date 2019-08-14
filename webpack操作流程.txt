@@ -1,0 +1,14 @@
+1.npm i webpack -g
+
+2.npm i webpack 
+
+3.项目目录下创建webpack.config.js（配置文件）
+
+4.下载html-webpack-plugin 指定模板文件的插件
+
+5.在package.json 中配置 "scripts":{"build":"webpack"}
+
+6.下载webpack-dev-server 配置热更新
+	npm install webpack-dev-server@2.7.1 --save-dev
+
+7.package.json添加   "start"："webpack-dev-server --hot --inline"

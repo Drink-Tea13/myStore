@@ -1,0 +1,14 @@
+1.安装编辑器 自使用插件
+
+2.配置node.js  淘宝镜像源 
+npm install -g cnpm --registry=https://registry.npm.taobao.org 添加cnpm淘宝镜像源
+
+npm config set registry https://registry.npm.taobao.org 修改npm淘宝镜像源
+//配置后可通过下面方式来验证是否成功 
+//npm config get registry
+还原镜像源 
+npm config set registry https://registry.npmjs.org
+
+
+3.node-sass 需要单独设置淘宝镜像源
+npm set sass_binary_site=https://npm.taobao.org/mirrors/node-sass/

@@ -1,0 +1,11 @@
+npm i vue-cli -g
+
+vue init webpack myapp
+
+cd myapp
+
+npm i
+
+npm run dev 启动开发环境
+
+npm run build 项目完成后打包
